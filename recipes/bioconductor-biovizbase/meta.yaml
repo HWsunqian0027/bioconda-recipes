@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 8430b2a7913fdcfe27b9bf52ba9aff7e
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -84,3 +84,5 @@ extra:
     path: recipes/bioconductor-biovizbase
     version: 1.28.2
 
+  additional-platforms:
+    - linux-aarch64
