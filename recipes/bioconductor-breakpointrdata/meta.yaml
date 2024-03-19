@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: e3f74132513d150cb5d5cc62bfd49586
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   description: 'Strand-seq data to demonstrate functionalities of breakpointR package.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
