@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 308883d85ab416d45eaa55428463d308
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -35,3 +35,7 @@ about:
   description: 'Stores all schemas required by various alabaster.* packages. No computation should be performed by this package, as that is handled by alabaster.base. We use a separate package instead of storing the schemas in alabaster.base itself, to avoid conflating management of the schemas with code maintenence.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
