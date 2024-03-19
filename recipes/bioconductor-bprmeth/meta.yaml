@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 8229c7c5175e3888c86a5a3a42eb7a8c
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -87,3 +87,5 @@ extra:
     path: recipes/bioconductor-bprmeth
     version: 1.8.0
 
+  additional-platforms:
+    - linux-aarch64
