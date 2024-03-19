@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('arvados-python-client', max_pin="x") }}
 
@@ -53,3 +53,5 @@ extra:
   skip-lints:
     - uses_setuptools
     - should_be_noarch_generic  # needs subprocess32 on py2k
+  additional-platforms:
+    - linux-aarch64
