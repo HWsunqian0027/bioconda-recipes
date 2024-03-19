@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 162cd253c719e347df5748ebb407a191
 build:
-  number: 12
+  number: 13
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,3 +38,7 @@ about:
   summary: 'Full genome sequences for Bos taurus (UCSC version bosTau4)'
   description: 'Full genome sequences for Bos taurus (Cow) as provided by UCSC (bosTau4, Oct. 2007) and stored in Biostrings objects.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
