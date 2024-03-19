@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: acf007b4bceaa196843cbcf221b762ba
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,3 +50,5 @@ extra:
     path: recipes/bioconductor-amountain
     version: 1.6.0
 
+  additional-platforms:
+    - linux-aarch64
