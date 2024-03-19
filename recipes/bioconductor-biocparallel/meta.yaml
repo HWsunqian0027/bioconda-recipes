@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: a6a331ac453920e713836ddd0de38e25
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -60,3 +60,5 @@ extra:
     path: recipes/bioconductor-biocparallel
     version: 1.14.2
 
+  additional-platforms:
+    - linux-aarch64
