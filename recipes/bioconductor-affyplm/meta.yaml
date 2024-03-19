@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: cdfd69bc9c54f3c03b52b3fd6e9f86b7
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -58,3 +58,5 @@ extra:
     path: recipes/bioconductor-affyplm
     version: 1.56.0
 
+  additional-platforms:
+    - linux-aarch64
