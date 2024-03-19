@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('arcs', max_pin="x") }}
 
@@ -38,3 +38,7 @@ about:
   license_family: GPL3
   license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: Scaffolding genome sequence assemblies using linked or long reads
+
+extra:
+  additional-platforms:
+    - linux-aarch64
