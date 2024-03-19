@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: a590578d3e87dbab236a5531f0a5bce0
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -53,3 +53,5 @@ extra:
     path: recipes/bioconductor-annaffy
     version: 1.52.0
 
+  additional-platforms:
+    - linux-aarch64
