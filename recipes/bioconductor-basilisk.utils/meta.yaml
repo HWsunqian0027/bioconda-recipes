@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: d5e61359283886e8653f772e65b0a898
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   description: 'Implements utilities for installation of the basilisk package, primarily for creation of the underlying Conda instance. This allows us to avoid re-writing the same R code in both the configure script (for centrally administered R installations) and in the lazy installation mechanism (for distributed package binaries). It is highly unlikely that developers - or, heaven forbid, end-users! - will need to interact with this package directly; they should be using the basilisk package instead.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
