@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 4aa011cdbdc464bbfe1542ec418e7749
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -58,3 +58,5 @@ extra:
     path: recipes/bioconductor-annotationforge
     version: 1.22.2
 
+  additional-platforms:
+    - linux-aarch64
