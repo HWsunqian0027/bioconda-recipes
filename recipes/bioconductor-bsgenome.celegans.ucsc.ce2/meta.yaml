@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: b2bf7eec2b07685cf9dcdf42840db208
 build:
-  number: 12
+  number: 13
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,3 +38,7 @@ about:
   summary: 'Full genome sequences for Caenorhabditis elegans (UCSC version ce2)'
   description: 'Full genome sequences for Caenorhabditis elegans (Worm) as provided by UCSC (ce2, Mar. 2004) and stored in Biostrings objects.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
