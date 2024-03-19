@@ -14,7 +14,9 @@ source:
     - ref_genes_getter.patch
 
 build:
-  number: 5
+  number: 6
+  run_exports:
+    - {{ pin_subpackage("ariba", max_pin="x.x.x") }}  
   # Skipping py>=36 on osx because the bowtie2 <2.4.0 recipes are currently skipped on osx.
   skip: True  # [py<30 or (py>=36 and osx) or py > 39]
   script: python -m pip install --no-deps --ignore-installed .
@@ -64,3 +66,5 @@ extra:
   container:
     # matplotlib depends on libGL.so.1 from the system
     extended-base: true
+  additional-platforms:
+    - linux-aarch64
