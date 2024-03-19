@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 33d853127b5e108b0fa1c5dfea22517d
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,3 +56,5 @@ extra:
     path: recipes/bioconductor-biosigner
     version: 1.8.0
 
+  additional-platforms:
+    - linux-aarch64
