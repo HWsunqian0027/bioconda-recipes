@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 43abcdda61fc9d69dbc24dbd1c91664d
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,3 +43,7 @@ about:
   description: 'Save MultiAssayExperiments into file artifacts, and load them back into memory. This is a more portable alternative to serialization of such objects into RDS files. Each artifact is associated with metadata for further interpretation; downstream applications can enrich this metadata with context-specific properties.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
