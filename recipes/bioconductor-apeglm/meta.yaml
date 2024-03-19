@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 0f8e64bdd8eec2566238fdc487afabb8
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -57,3 +57,5 @@ extra:
     path: recipes/bioconductor-apeglm
     version: 1.2.1
 
+  additional-platforms:
+    - linux-aarch64
