@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 746846f9fda38de9fe2c3dd4c49c18e1
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -45,3 +45,7 @@ about:
   summary: 'Read and write mass spectrometry imaging files'
   description: 'Fast and efficient reading and writing of mass spectrometry imaging data files. Supports imzML and Analyze 7.5 formats. Provides ontologies for mass spectrometry imaging.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
