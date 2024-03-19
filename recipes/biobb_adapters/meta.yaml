@@ -10,7 +10,9 @@ source:
   sha256: ac7f599e868b185a22e46957fc1ccb9d3a0aad277cbf071c6b29918097db17d0
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("biobb_adapters", max_pin="x.x.x") }}  
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -49,3 +51,5 @@ about:
 
 extra:
   recipe-maintainers: ''
+  additional-platforms:
+    - linux-aarch64
