@@ -11,7 +11,9 @@ source:
 
 build:
   noarch: generic
-  number: 2
+  number: 3
+  run_exports:
+    - {{ pin_subpackage("bcool", max_pin="x.x.x") }}  
 
 requirements:
   run:
@@ -29,3 +31,7 @@ about:
   home: https://github.com/Malfoy/BCOOL
   license: AGPL-3.0
   summary: BCOOL is a read corrector for NGS sequencing data that align reads on a de Bruijn graph. Version described at (https://arxiv.org/abs/1711.03336) presented at RECOMB-seq 2018
+
+extra:
+  additional-platforms:
+    - linux-aarch64
