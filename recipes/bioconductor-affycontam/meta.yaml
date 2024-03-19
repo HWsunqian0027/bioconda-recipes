@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: eb7e98d31e923d77d4e6197e5cf8b02d
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -48,3 +48,5 @@ extra:
     path: recipes/bioconductor-affycontam
     version: 1.38.0
 
+  additional-platforms:
+    - linux-aarch64
