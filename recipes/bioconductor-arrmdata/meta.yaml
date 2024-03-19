@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 95475f869b8ff3d6344c0f45f2e616c9
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,3 +40,5 @@ extra:
     path: recipes/bioconductor-arrmdata
     version: 1.16.0
 
+  additional-platforms:
+    - linux-aarch64
