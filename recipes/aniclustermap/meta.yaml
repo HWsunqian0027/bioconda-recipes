@@ -14,7 +14,7 @@ build:
     - ANIclustermap = aniclustermap.aniclustermap:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vvv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('aniclustermap', max_pin="x") }}
 
@@ -51,3 +51,5 @@ about:
 extra:
   recipe-maintainers:
     - moshi4
+  additional-platforms:
+    - linux-aarch64
