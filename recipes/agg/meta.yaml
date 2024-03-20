@@ -6,7 +6,9 @@ package:
   version: {{ version }}
 
 build:
-  number: 2
+  number: 3
+  run_exports:
+    - {{ pin_subpackage("agg", max_pin="x.x.x") }}  
   skip: True  # [osx]
 
 source:
@@ -32,3 +34,7 @@ about:
   license: GPL3
   license_file: LICENSE
   summary: gvcf aggregation tool
+
+extra:
+  additional-platforms:
+    - linux-aarch64
