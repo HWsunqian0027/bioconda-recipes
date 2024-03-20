@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vvv"
   run_exports:
@@ -42,3 +42,7 @@ about:
   license: GPL-3
   license_file: LICENSE
   summary: Convert between AnnData and SingleCellExperiment
+
+extra:
+  additional-platforms:
+    - linux-aarch64
