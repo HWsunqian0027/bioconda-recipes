@@ -11,7 +11,9 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("binsanity", max_pin="x.x.x") }}  
   script: $PYTHON -m pip install --no-deps --ignore-installed --no-cache-dir -vvv .
 
 requirements:
@@ -36,3 +38,7 @@ about:
   license: GPL3
   license_family: GPL3
   summary: Method to cluster contigs based a biphasic method with coverage and composition
+
+extra:
+  additional-platforms:
+    - linux-aarch64
