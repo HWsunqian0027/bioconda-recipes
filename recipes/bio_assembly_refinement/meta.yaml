@@ -10,7 +10,9 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
+  run_exports:
+    - {{ pin_subpackage("bio_assembly_refinement", max_pin="x.x.x") }}  
 
 requirements:
   host:
@@ -32,3 +34,7 @@ about:
   home: https://github.com/nds/bio_assembly_refinement
   license: GPLv3
   summary: 'Assembly refinement tools, mostly useful for (but not limited to) pacbio bacterial assemblies'
+
+extra:
+  additional-platforms:
+    - linux-aarch64
