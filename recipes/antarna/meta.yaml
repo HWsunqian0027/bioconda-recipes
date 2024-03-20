@@ -10,7 +10,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("antarna", max_pin="x.x.x") }}  
   skip: True  # [osx or py3k]
 
 requirements:
@@ -42,3 +44,5 @@ extra:
     extended-base: True
   identifiers:
     - biotools:antarna
+  additional-platforms:
+    - linux-aarch64
