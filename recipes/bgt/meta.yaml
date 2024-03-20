@@ -3,7 +3,9 @@ package:
   version: "r283"
 
 build:
-  number: 6
+  number: 7
+  run_exports:
+    - {{ pin_subpackage("bgt", max_pin="x.x.x") }}  
 
 source:
   url: https://github.com/lh3/bgt/archive/7c66cc885df74328a191b943140e3db96a3c7de6.tar.gz
@@ -27,3 +29,7 @@ about:
   license: MIT
   license_file: LICENSE.txt
   summary: Flexible genotype query among 30,000+ samples whole-genome.
+
+extra:
+  additional-platforms:
+    - linux-aarch64
