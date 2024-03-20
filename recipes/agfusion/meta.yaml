@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
   run_exports:
     - {{ pin_subpackage("agfusion", max_pin="x.x") }}
@@ -45,3 +45,5 @@ about:
 extra:
   identifiers:
     - doi:10.1101/080903
+  additional-platforms:
+    - linux-aarch64
