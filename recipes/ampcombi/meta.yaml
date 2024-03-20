@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - ampcombi = ampcombi:main
   script: "{{ PYTHON }} -m pip install . -vv"
@@ -55,3 +55,5 @@ extra:
   recipe-maintainers:
     - darcy220606
     - louperelo
+  additional-platforms:
+    - linux-aarch64
