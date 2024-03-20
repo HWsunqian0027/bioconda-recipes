@@ -13,7 +13,9 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bayesase", max_pin="x.x.x") }}  
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -92,3 +94,5 @@ about:
 
 extra:
   recipe-maintainers: 'om@rc.ufl.edu'
+  additional-platforms:
+    - linux-aarch64
