@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: c341e537e79161abfd6f1f3382d3eb90
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,3 +43,7 @@ about:
   description: 'The biobtreeR package provides an interface to [biobtree](https://github.com/tamerh/biobtree) tool which covers large set of bioinformatics datasets and allows search and chain mappings functionalities.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
