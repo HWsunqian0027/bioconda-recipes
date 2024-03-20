@@ -10,7 +10,9 @@ source:
   md5: 3b4ff4c86cf3cab0b0fdd126f35852b5
 
 build:
-  number: 2
+  number: 3
+  run_exports:
+    - {{ pin_subpackage("baypass", max_pin="x.x.x") }}  
   skip: True # [osx]
 
 requirements:
@@ -26,3 +28,7 @@ about:
   home: http://www1.montpellier.inra.fr/CBGP/software/baypass/index.html
   license: 'CECILL-B'
   summary: 'Genome-Wide Scan for Adaptive Differentiation and Association Analysis with population-specific covariables.'
+
+extra:
+  additional-platforms:
+    - linux-aarch64
