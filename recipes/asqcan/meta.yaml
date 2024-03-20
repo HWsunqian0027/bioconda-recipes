@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("asqcan", max_pin="x.x") }}
   script: {{ PYTHON }} -m pip install . --ignore-installed --no-deps -vv
@@ -42,3 +42,7 @@ about:
   license: GPL-3.0-only
   summary: 'A combined pipeline for bacterial genome assembly, quality control and annotation'
   license_family: GPL
+
+extra:
+  additional-platforms:
+    - linux-aarch64
