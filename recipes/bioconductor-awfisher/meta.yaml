@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: ba9b2824782018cc7626ebc72b6bb81e
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,3 +44,7 @@ about:
   description: 'Implementation of the adaptively weighted fisher''s method, including fast p-value computing, variability index, and meta-pattern.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
