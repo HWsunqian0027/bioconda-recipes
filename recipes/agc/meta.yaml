@@ -7,7 +7,9 @@ package:
   name: agc
   version: {{ version }}
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("agc", max_pin="x.x.x") }}  
   script: "mkdir -p ${PREFIX}/bin; cp agc ${PREFIX}/bin"
 source:
   url: https://github.com/refresh-bio/agc/releases/download/v{{ version }}/agc-{{ version }}_x64-{{ system }}.tar.gz
@@ -28,3 +30,5 @@ extra:
     - should_not_be_noarch_source
   watch:
     enable: yes
+  additional-platforms:
+    - linux-aarch64
