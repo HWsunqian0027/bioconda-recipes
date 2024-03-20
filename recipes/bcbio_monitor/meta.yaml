@@ -10,7 +10,9 @@ source:
 
 build:
   noarch: python
-  number: 4
+  number: 5
+  run_exports:
+    - {{ pin_subpackage("bcbio_monitor", max_pin="x.x.x") }}  
   entry_points:
     - bcbio_monitor = bcbio_monitor.cli:cli
   script: {{ PYTHON }} -m pip install . --ignore-installed --no-deps -vv
@@ -45,3 +47,7 @@ about:
   home: https://github.com/guillermo-carrasco/bcbio-nextgen-monitor
   license: MIT
   summary: 'bcbio-monitor is an extension of bcbio-nextgen to visualize its progress'
+
+extra:
+  additional-platforms:
+    - linux-aarch64
