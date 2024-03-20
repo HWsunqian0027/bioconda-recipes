@@ -7,7 +7,9 @@ source:
   sha256: 118b898af3fcb0618ccbd924728ee2ac520a23d75ee042dfdc86dfe1bf3276af
 build:
   noarch: generic
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("arcsv", max_pin="x.x.x") }}  
   
 
 requirements:
@@ -26,3 +28,7 @@ about:
   license: GPL-3.0
   license_file: license.txt
   summary: A pipeline to detect SV in archaic human
+
+extra:
+  additional-platforms:
+    - linux-aarch64
