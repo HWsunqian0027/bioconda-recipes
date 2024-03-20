@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: b6e8e624b34a0626cfa015e9814d017b
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -55,3 +55,5 @@ extra:
     path: recipes/bioconductor-basic4cseq
     version: 1.16.0
 
+  additional-platforms:
+    - linux-aarch64
