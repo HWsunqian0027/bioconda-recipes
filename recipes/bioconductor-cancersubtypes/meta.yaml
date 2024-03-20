@@ -13,7 +13,9 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 60441ccfd99126a3727c0621d087d526
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bioconductor-cancersubtypes", max_pin="x.x.x") }}  
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,3 +58,5 @@ extra:
     path: recipes/bioconductor-cancersubtypes
     version: 1.6.0
 
+  additional-platforms:
+    - linux-aarch64
