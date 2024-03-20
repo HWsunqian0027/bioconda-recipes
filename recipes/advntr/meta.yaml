@@ -6,7 +6,9 @@ package:
 
 build:
   skip: True  # [py>=37]
-  number: 0 
+  number: 1 
+  run_exports:
+    - {{ pin_subpackage("advntr", max_pin="x.x.x") }}  
   script:
     - make install CXX="${CXX} ${CXXFLAGS}" PREFIX=${PREFIX}
     - python -m pip install --no-deps --ignore-installed .
@@ -59,3 +61,5 @@ about:
 extra:
   skip-lints:
     - cython_must_be_in_host
+  additional-platforms:
+    - linux-aarch64
