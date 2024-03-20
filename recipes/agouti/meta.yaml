@@ -11,7 +11,9 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("agouti", max_pin="x.x.x") }}  
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -56,3 +58,5 @@ extra:
   recipe-maintainers:
     - jankgithub
     - marekzyw
+  additional-platforms:
+    - linux-aarch64
