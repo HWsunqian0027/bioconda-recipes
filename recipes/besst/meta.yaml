@@ -11,7 +11,9 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 4
+  run_exports:
+    - {{ pin_subpackage("besst", max_pin="x.x.x") }}  
 
 requirements:
   host:
@@ -47,3 +49,5 @@ extra:
   identifiers:
     - biotools:besst
     - doi:10.1186/1471-2105-15-281
+  additional-platforms:
+    - linux-aarch64
