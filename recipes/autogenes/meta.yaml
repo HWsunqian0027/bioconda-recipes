@@ -11,7 +11,9 @@ source:
   sha256: 8daa6e9aa97c7ddf45ab0906307a4875a25bd99301be0838bb17e313d837446a
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("autogenes", max_pin="x.x.x") }}  
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
   noarch: python
 
@@ -46,3 +48,5 @@ extra:
     - PelzKo
   identifiers:
     - doi:10.1016/j.cels.2021.05.006
+  additional-platforms:
+    - linux-aarch64
