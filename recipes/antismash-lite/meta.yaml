@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - download-antismash-databases=antismash.download_databases:_main
@@ -80,3 +80,5 @@ extra:
     - doi:10.1093/nar/gkab335
     - doi:10.1093/nar/gkad344
     - usegalaxy-eu:antismash
+  additional-platforms:
+    - linux-aarch64
