@@ -11,7 +11,9 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("beamspy", max_pin="x.x.x") }}  
   entry_points:
     - beamspy = beamspy.__main__:main
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv
@@ -51,3 +53,5 @@ extra:
     - uses_matplotlib
   recipe-maintainers:
     - RJMW
+  additional-platforms:
+    - linux-aarch64
