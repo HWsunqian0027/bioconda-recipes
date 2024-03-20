@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 07d98bcf8be950a16c1d6aaae375f17d
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,3 +50,5 @@ extra:
     path: recipes/bioconductor-aroma.light
     version: 3.10.0
 
+  additional-platforms:
+    - linux-aarch64
