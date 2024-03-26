@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 7a62abd020843736b7ea125ffc4a56e0
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -67,3 +67,7 @@ about:
   description: 'Predicts branchpoint probability for sites in intronic branchpoint windows. Queries can be supplied as intronic regions; or to evaluate the effects of mutations, SNPs.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
