@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: generic
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("agat", max_pin="x") }}
 
@@ -77,3 +77,5 @@ about:
 extra:
   recipe-maintainers:
     - juke34
+  additional-platforms:
+    - linux-aarch64
