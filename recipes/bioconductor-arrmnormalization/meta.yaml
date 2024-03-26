@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: a6223cb64b7077670d38fb437638e0fe
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,3 +43,5 @@ extra:
     path: recipes/bioconductor-arrmnormalization
     version: 1.20.0
 
+  additional-platforms:
+    - linux-aarch64
