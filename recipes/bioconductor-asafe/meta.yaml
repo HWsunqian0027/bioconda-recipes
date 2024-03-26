@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: e054d986c3b6f2574c26498eaf6e4f7c
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,3 +42,5 @@ extra:
     path: recipes/bioconductor-asafe
     version: 1.6.0
 
+  additional-platforms:
+    - linux-aarch64
