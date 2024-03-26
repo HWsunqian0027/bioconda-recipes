@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 186adb59264d468d17c0f6374e2eb1f6
 build:
-  number: 7
+  number: 8
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   summary: 'Full genome sequences for Pan paniscus (UCSC version panPan1)'
   description: 'Full genome sequences for Pan paniscus (Bonobo) as provided by UCSC (panPan1, May 2012) and stored in Biostrings objects.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
