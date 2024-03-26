@@ -11,7 +11,9 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("binning_refiner", max_pin="x.x.x") }}  
   script: $PYTHON -m pip install --no-deps --ignore-installed --no-cache-dir -vvv .
 
 requirements:
@@ -33,3 +35,7 @@ about:
   license: GPL3
   license_family: GPL3
   summary: Improving genome bins through the combination of different binning programs
+
+extra:
+  additional-platforms:
+    - linux-aarch64
