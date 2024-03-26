@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 93b42354404edd848b21ea6781ca135c
 build:
-  number: 13
+  number: 14
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   summary: 'Full genome sequences for Gallus gallus (UCSC version galGal5)'
   description: 'Full genome sequences for Gallus gallus (Chicken) as provided by UCSC (galGal5, Dec. 2015) and stored in Biostrings objects.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
