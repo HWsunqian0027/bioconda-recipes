@@ -14,7 +14,9 @@ source:
     - paths.patch
 
 build:
-  number: 5
+  number: 6
+  run_exports:
+    - {{ pin_subpackage("bicseq2-norm", max_pin="x.x.x") }}  
 
 requirements:
   build:
@@ -43,3 +45,5 @@ about:
 extra:
   identifiers:
     - doi:10.1093/nar/gkw491
+  additional-platforms:
+    - linux-aarch64
