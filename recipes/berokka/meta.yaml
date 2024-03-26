@@ -11,7 +11,9 @@ source:
 
 build:
   noarch: generic
-  number: 3
+  number: 4
+  run_exports:
+    - {{ pin_subpackage("berokka", max_pin="x.x.x") }}  
 
 requirements:
   host:
@@ -31,3 +33,7 @@ about:
   license_family: GPL
   license_file: LICENSE
   summary: Trim, circularise and orient long read bacterial genome assemblies.
+
+extra:
+  additional-platforms:
+    - linux-aarch64
