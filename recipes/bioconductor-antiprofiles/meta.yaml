@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 80b3c1174d02d3b00b3ebf5d14a75b90
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,3 +46,5 @@ extra:
     path: recipes/bioconductor-antiprofiles
     version: 1.20.0
 
+  additional-platforms:
+    - linux-aarch64
