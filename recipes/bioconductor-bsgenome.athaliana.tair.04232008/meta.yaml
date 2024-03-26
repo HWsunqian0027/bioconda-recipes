@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 6b8a31a228dbcf4468974f5ec1d98467
 build:
-  number: 12
+  number: 13
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   summary: 'Full genome sequences for Arabidopsis thaliana (TAIR version from April 23, 2008)'
   description: 'Full genome sequences for Arabidopsis thaliana as provided by TAIR (snapshot from April 23, 2008) and stored in Biostrings objects.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
