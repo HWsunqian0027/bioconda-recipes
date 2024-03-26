@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 7aa46c496dbe47218ea774cb02108800
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,3 +46,7 @@ about:
   summary: 'multivariate outlier detection for expression array QA'
   description: 'This package supports the application of diverse quality metrics to AffyBatch instances, summarizing these metrics via PCA, and then performing parametric outlier detection on the PCs to identify aberrant arrays with a fixed Type I error rate'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
