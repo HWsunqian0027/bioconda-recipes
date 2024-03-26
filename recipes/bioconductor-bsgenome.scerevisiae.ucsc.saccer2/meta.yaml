@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: f1025b4d0fa7891dc46301550163753e
 build:
-  number: 12
+  number: 13
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   summary: 'Saccharomyces cerevisiae (Yeast) full genome (UCSC version sacCer2)'
   description: 'Saccharomyces cerevisiae (Yeast) full genome as provided by UCSC (sacCer2, June 2008) and stored in Biostrings objects.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
