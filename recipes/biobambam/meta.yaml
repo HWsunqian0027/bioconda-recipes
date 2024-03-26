@@ -12,7 +12,9 @@ source:
   sha256: {{ sha256hash }}
 
 build:
-  number: 3
+  number: 4
+  run_exports:
+    - {{ pin_subpackage("biobambam", max_pin="x.x.x") }}  
   skip: True  # [osx]
 
 requirements:
@@ -31,3 +33,7 @@ about:
   license: GPLv3
   license_file: GPLv3
   summary: Tools for early stage alignment file processing
+
+extra:
+  additional-platforms:
+    - linux-aarch64
