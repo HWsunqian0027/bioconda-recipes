@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: a0d7cbb46b78eabdbc06c4ee1b417bcb
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,3 +56,5 @@ extra:
     path: recipes/bioconductor-blima
     version: 1.14.0
 
+  additional-platforms:
+    - linux-aarch64
