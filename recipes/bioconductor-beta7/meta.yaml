@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 7beee3699282a97c765cf418036fc0ed
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,3 +38,7 @@ about:
   description: 'Data from 6 gpr files aims to identify differential expressed genes between the beta 7+ and beta 7- memory T helper cells.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
