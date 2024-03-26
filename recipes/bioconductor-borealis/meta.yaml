@@ -13,7 +13,9 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: a49d811ecb46b4fa88ff125fc5ff8486
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bioconductor-borealis", max_pin="x.x.x") }}  
   rpaths:
     - lib/R/lib/
     - lib/
@@ -66,3 +68,7 @@ about:
   description: 'Borealis is an R library performing outlier analysis for count-based bisulfite sequencing data. It detectes outlier methylated CpG sites from bisulfite sequencing (BS-seq). The core of Borealis is modeling Beta-Binomial distributions. This can be useful for rare disease diagnoses.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
