@@ -12,7 +12,9 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bg", max_pin="x.x.x") }}  
 
 requirements:
   host:
@@ -46,3 +48,5 @@ about:
 extra:
   identifiers:
     - doi:10.1101/gr.082784.108
+  additional-platforms:
+    - linux-aarch64
