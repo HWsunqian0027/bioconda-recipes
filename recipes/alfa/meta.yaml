@@ -11,7 +11,9 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("alfa", max_pin="x.x.x") }}  
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -40,3 +42,5 @@ about:
 extra:
   recipe-maintainers:
     - fgypas
+  additional-platforms:
+    - linux-aarch64
