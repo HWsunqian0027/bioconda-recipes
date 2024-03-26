@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('bigtools', max_pin="x.x") }}
 
@@ -33,3 +33,5 @@ about:
 extra:
   identifiers:
     - doi:10.5281/zenodo.10606493
+  additional-platforms:
+    - linux-aarch64
