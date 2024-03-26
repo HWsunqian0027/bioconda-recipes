@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   run_exports:
@@ -53,3 +53,5 @@ about:
 
 extra:
   recipe-maintainers: ''
+  additional-platforms:
+    - linux-aarch64
