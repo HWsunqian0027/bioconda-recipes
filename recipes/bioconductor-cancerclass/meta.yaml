@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: b2e5d6ec200ee08476480fa1f0a1577d
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,3 +43,7 @@ about:
   description: 'The classification protocol starts with a feature selection step and continues with nearest-centroid classification. The accurarcy of the predictor can be evaluated using training and test set validation, leave-one-out cross-validation or in a multiple random validation protocol. Methods for calculation and visualization of continuous prediction scores allow to balance sensitivity and specificity and define a cutoff value according to clinical requirements.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
