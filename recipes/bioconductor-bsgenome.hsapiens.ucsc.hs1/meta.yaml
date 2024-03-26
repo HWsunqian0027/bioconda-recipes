@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 5812c5670f51a5c58a9da9e042e7e440
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   summary: 'Full genomic sequences for UCSC genome hs1 (Homo sapiens)'
   description: 'Full genomic sequences for UCSC genome hs1 (the hs1 genome is based on assembly T2T-CHM13v2.0, with GenBank assembly accession GCA_009914755.4). The sequences are stored in DNAString objects.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
