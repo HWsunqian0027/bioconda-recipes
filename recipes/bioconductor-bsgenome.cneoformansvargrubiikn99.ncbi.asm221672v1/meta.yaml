@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: ea536a15bd932af794f672d9b204c141
 build:
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   summary: 'Full Genome Sequence for Cryptococcus neoformans var. grubii KN99 (ASM221672v1)'
   description: 'Full genome sequences for Cryptococcus neoformans var. grubii KN99 (assembly ASM221672v1 assembly accession GCA_002216725.1).'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
