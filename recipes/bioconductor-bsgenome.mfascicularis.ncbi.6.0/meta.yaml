@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 67272a96950f485d3c0770265f59c85c
 build:
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   summary: 'Full genome sequences for Macaca fascicularis (Macaca_fascicularis_6.0)'
   description: 'Full genome sequences for Macaca fascicularis (Crab-eating macaque) as provided by NCBI (assembly Macaca_fascicularis_6.0, assembly accession GCA_011100615.1) and stored in Biostrings objects.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
