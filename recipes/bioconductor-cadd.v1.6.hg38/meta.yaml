@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 620a889ea8bc55f98811a80a3aec814d
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,3 +40,7 @@ about:
   summary: 'CADD v1.6 Pathogenicity Scores AnnotationHub Resource Metadata for hg38'
   description: 'Store University of Washington CADD v1.6 hg38 pathogenicity scores AnnotationHub Resource Metadata. Provide provenance and citation information for University of Washington CADD v1.6 hg38 pathogenicity score AnnotationHub resources. Illustrate in a vignette how to access those resources.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
