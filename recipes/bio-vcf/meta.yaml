@@ -2,7 +2,9 @@ package:
   name: bio-vcf
   version: "0.9.5"
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bio-vcf", max_pin="x.x.x") }}  
   noarch: generic
 source:
   url: https://github.com/vcflib/bio-vcf/archive/refs/tags/v0.9.5.tar.gz
@@ -20,3 +22,7 @@ about:
   home: https://github.com/vcflib/bio-vcf
   license: MIT
   summary: Smart VCF parser
+
+extra:
+  additional-platforms:
+    - linux-aarch64
