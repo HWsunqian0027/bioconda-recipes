@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 421c045b993b2cfbc2b08c8103835c56
 build:
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,3 +38,7 @@ about:
   description: 'Full genome sequences for Glycine max as provided by NCBI (assembly Glycine_max_v4.0, assembly accession GCF_000004515.5) and stored in Biostrings objects.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
