@@ -10,7 +10,9 @@ source:
   sha256: bfbf93c70f71236d2aa3d7289accea3306651359c0e58fbe9902441d2b6f439f
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("binny", max_pin="x.x.x") }}  
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   skip: False
@@ -51,3 +53,5 @@ extra:
     - ohickl
     - a-h-b
 
+  additional-platforms:
+    - linux-aarch64
