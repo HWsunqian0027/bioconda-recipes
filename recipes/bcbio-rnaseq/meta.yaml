@@ -7,7 +7,9 @@ source:
   md5: e3f150f45026af6d7513b16094bd54e9
 
 build:
-  number: 4
+  number: 5
+  run_exports:
+    - {{ pin_subpackage("bcbio-rnaseq", max_pin="x.x.x") }}  
   skip: True #[osx]
 
 requirements:
@@ -44,3 +46,7 @@ about:
   home: https://github.com/roryk/bcbio.rnaseq
   license: MIT
   summary: Report generation for bcbio-nextgen RNA-seq runs
+
+extra:
+  additional-platforms:
+    - linux-aarch64
