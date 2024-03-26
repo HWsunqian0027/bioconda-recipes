@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 0a0940593d75deaed0aa6f01954cf61c
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,3 +36,7 @@ about:
   summary: 'Genexpression dataset published by van''t Veer et al. [2002] and van de Vijver et al. [2002] (NKI).'
   description: 'Genexpression data from a breast cancer study published by van''t Veer et al. in 2002 and van de Vijver et al. in 2002, provided as an eSet.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
