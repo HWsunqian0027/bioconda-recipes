@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 16eeec0ca7502101425cbb568e6eef15
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,3 +46,7 @@ about:
   description: 'This package provides an interface to simulate metabolic reconstruction from the BiGG database(http://bigg.ucsd.edu/) and other metabolic reconstruction databases. The package facilitates flux balance analysis (FBA) and the sampling of feasible flux distributions. Metabolic networks and estimated fluxes can be visualized with hypergraphs.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
