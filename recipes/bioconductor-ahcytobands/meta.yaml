@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 3dd85d02e7ed3fca4c7898b5e395edeb
 build:
-  number: 4
+  number: 5
   rpaths:
     - lib/R/lib/
     - lib/
@@ -35,3 +35,7 @@ about:
   summary: 'CytoBands for AnnotationHub'
   description: 'Supplies AnnotationHub with CytoBand information from UCSC. There is a track for each major organism. Giemsa-stained bands are commonly used to decorate chromosomal overviews in visualizations of genomic data.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
