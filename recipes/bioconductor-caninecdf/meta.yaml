@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 656f845cc66890015a4e13c5304ec262
 build:
-  number: 12
+  number: 13
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,3 +38,7 @@ about:
   description: 'A package containing an environment representing the Canine.cdf file.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
