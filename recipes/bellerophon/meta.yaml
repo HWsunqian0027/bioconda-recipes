@@ -12,7 +12,9 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bellerophon", max_pin="x.x.x") }}  
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
@@ -32,3 +34,7 @@ about:
   license: MIT
   license_file: LICENSE
   summary: "Filter reads that span a mapping junction, retaining the 5'-side."
+
+extra:
+  additional-platforms:
+    - linux-aarch64
