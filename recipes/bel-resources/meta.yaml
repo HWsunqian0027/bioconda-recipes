@@ -11,7 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bel-resources", max_pin="x.x.x") }}  
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
@@ -36,3 +38,7 @@ about:
   license_file: LICENSE
   summary: "Utilities for BEL resource files."
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
