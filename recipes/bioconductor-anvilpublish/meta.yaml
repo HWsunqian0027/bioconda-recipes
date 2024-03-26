@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: bbd5bd8ab36e2563e7b4b01e2b11295d
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -48,3 +48,7 @@ about:
   summary: 'Publish Packages and Other Resources to AnVIL Workspaces'
   description: 'Use this package to create or update AnVIL workspaces from resources such as R / Bioconductor packages. The metadata about the package (e.g., select information from the package DESCRIPTION file and from vignette YAML headings) are used to populate the ''DASHBOARD''. Vignettes are translated to python notebooks ready for evaluation in AnVIL.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
