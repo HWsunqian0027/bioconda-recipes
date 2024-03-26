@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: a4455fab1d47dcf8dc2411fec1066a2c
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,3 +36,7 @@ about:
   summary: 'Annotated variants on the chromosome 21, human genome 19, Ashkenazim Trio son sample'
   description: 'SonVariantsChr21 is a dataset of annotated genomic variants coming from Complete Genomics whole genome sequencing. Data comes from GIAB project, Ashkenazim Trio, sample HG002 run 1. Both vcf and annotated data frame are provided.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
