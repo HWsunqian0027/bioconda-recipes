@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 2cc3a612a2064624735d6a92910be7f3
 build:
-  number: 4
+  number: 5
   rpaths:
     - lib/R/lib/
     - lib/
@@ -38,3 +38,7 @@ about:
   summary: 'Full genome sequences for Homo sapiens (UCSC version hg38, based on GRCh38.p12) with injected minor alleles (dbSNP151)'
   description: 'Full genome sequences for Homo sapiens (Human) as provided by UCSC (hg38, based on GRCh38.p12) with minor alleles injected from dbSNP151, and stored in Biostrings objects. Full genome sequences for Homo sapiens (Human) as provided by UCSC (hg38, based on GRCh38.p12) with minor alleles injected from dbSNP151, and stored in Biostrings objects. Only common single nucleotide variants (SNVs) with at least one alternate allele with frequency greater than 0.01 were considered. For SNVs with more than 1 alternate allele, the most frequent allele was chosen as the minor allele to be injected into the reference genome.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
