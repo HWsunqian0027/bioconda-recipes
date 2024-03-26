@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: c5c10989a8a2dbfd20c228522474fac1
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,3 +36,7 @@ about:
   summary: 'Gene expression dataset published by Miller et al. [2005] (UPP).'
   description: 'Gene expression data from a breast cancer study published by Miller et al. in 2005, provided as an eSet.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
