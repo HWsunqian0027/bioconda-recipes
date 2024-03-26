@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 3902516a40a503302ef732143b2394b9
 build:
-  number: 12
+  number: 13
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,3 +40,7 @@ about:
   summary: 'Codelink ADME Rat 16-Assay Bioarray annotation data (chip adme16cod)'
   description: 'Codelink ADME Rat 16-Assay Bioarray annotation data (chip adme16cod) assembled using data from public repositories'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
