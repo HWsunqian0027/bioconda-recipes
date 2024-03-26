@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 5a73975945814e725991bd67552349e6
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -48,3 +48,5 @@ extra:
     path: recipes/bioconductor-banocc
     version: 1.6.0
 
+  additional-platforms:
+    - linux-aarch64
