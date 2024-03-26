@@ -13,7 +13,9 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 73514c333f1b07a5fe589f993a8c77e2
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bioconductor-bgmix", max_pin="x.x.x") }}  
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,3 +51,5 @@ extra:
     path: recipes/bioconductor-bgmix
     version: 1.40.0
 
+  additional-platforms:
+    - linux-aarch64
