@@ -7,7 +7,9 @@ package:
 
 build:
   noarch: generic
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("agrvate", max_pin="x.x.x") }}  
 
 source:
   url: https://github.com/VishnuRaghuram94/{{ name }}/archive/v{{ version }}.tar.gz
@@ -33,3 +35,7 @@ about:
   license_file: LICENSE
   summary: Rapid identification of Staphylococcus aureus agr locus type and agr operon variants.
   
+
+extra:
+  additional-platforms:
+    - linux-aarch64
