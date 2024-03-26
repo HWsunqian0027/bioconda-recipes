@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 9c8dd928dd2b7900ff453ddc590ad6e4
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -81,3 +81,7 @@ about:
   summary: 'An R package for the Bayesian analysis of differential subcellular localisation experiments'
   description: 'The Bandle package enables the analysis and visualisation of differential localisation experiments using mass-spectrometry data. Experimental methods supported include dynamic LOPIT-DC, hyperLOPIT, Dynamic Organellar Maps, Dynamic PCP. It provides Bioconductor infrastructure to analyse these data.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
