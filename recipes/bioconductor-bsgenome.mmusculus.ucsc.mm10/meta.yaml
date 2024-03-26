@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: ffddc2e035527ed1a1e201ac4cc0b1f3
 build:
-  number: 4
+  number: 5
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,3 +42,5 @@ extra:
     path: recipes/bioconductor-bsgenome.mmusculus.ucsc.mm10
     version: 1.4.0
 
+  additional-platforms:
+    - linux-aarch64
