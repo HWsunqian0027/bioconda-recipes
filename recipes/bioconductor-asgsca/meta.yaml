@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: c0e60b4fa228444ab7863044881fa8bb
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,3 +47,5 @@ extra:
     path: recipes/bioconductor-asgsca
     version: 1.14.0
 
+  additional-platforms:
+    - linux-aarch64
