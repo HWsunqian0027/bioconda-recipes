@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 8c725d5c496f9bfe7ed4b5d5c538244a
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   description: 'Microarray data (from the Illumina Ref-8 BeadChips platform) and phenotype-level data from an epidemiological investigation of benzene exposure, packaged using "SummarizedExperiemnt", for use as an example with the "biotmle" R package.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
