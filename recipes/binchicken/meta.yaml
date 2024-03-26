@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
   run_exports:
@@ -45,3 +45,7 @@ about:
   license_family: GPL3
   license_file: LICENSE
   summary: Targeted recovery of low abundance metagenome assembled genomes through intelligent coassembly
+
+extra:
+  additional-platforms:
+    - linux-aarch64
