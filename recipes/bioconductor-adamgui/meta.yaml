@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: d6b76d93be7f193cd913f44f6ff41a64
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -75,3 +75,5 @@ about:
   description: 'ADAMgui is a Graphical User Interface for the ADAM package. The ADAMgui package provides 2 shiny-based applications that allows the user to study the output of the ADAM package files through different plots. It''s possible, for example, to choose a specific GFAG and observe the gene expression behavior with the plots created with the GFAGtargetUi function. Features such as differential expression and foldchange can be easily seen with aid of the plots made with GFAGpathUi function.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
+  additional-platforms:
+    - linux-aarch64
