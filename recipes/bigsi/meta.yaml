@@ -10,7 +10,9 @@ source:
   sha256: 877b7c016aaa084bdd36d097cb24d01e97b951ad142e40fad8ebc8e083da2478
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bigsi", max_pin="x.x.x") }}  
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
@@ -57,3 +59,5 @@ about:
 extra:
    identifiers:
      - doi:10.1038/s41587-018-0010-1
+  additional-platforms:
+    - linux-aarch64
