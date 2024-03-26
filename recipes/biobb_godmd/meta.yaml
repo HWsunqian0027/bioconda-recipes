@@ -10,7 +10,7 @@ source:
   sha256: d02d3fbf8aaffaca3bf722c97fd515fcc686265b92d764f7a5162ccb40fc3cf7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   run_exports:
@@ -50,3 +50,7 @@ about:
     [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), see the file LICENSE for details.\n\
     \n\
     ![](https://bioexcel.eu/wp-content/uploads/2019/04/Bioexcell_logo_1080px_transp.png \"Bioexcel\")\n\n\n"
+
+extra:
+  additional-platforms:
+    - linux-aarch64
