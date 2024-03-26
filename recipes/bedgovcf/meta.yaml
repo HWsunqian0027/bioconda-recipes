@@ -12,7 +12,7 @@ source:
     md5: bbe8e249c655a276657c6602524f7e39 # [linux]
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage(name, max_pin="x.x") }}
 
@@ -34,3 +34,5 @@ about:
   home: https://github.com/nvnieuwk/bedgovcf
   license: MIT
   summary: A simple tool to convert BED files to VCF files
+  additional-platforms:
+    - linux-aarch64
