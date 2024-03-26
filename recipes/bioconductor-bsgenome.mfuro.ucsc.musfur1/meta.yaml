@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: c33e71746ce551bcbcd22be1979aee63
 build:
-  number: 12
+  number: 13
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,3 +37,7 @@ about:
   summary: 'Full genome sequences for Mustela putorius furo (UCSC version musFur1)'
   description: 'Full genome sequences for Mustela putorius furo (Ferret) as provided by UCSC (musFur1, Apr. 2011) and stored in Biostrings objects.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
