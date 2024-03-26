@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 57eb9e8db5a9dc58db25b88bbe5d2436
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,3 +49,5 @@ extra:
     path: recipes/bioconductor-bufferedmatrixmethods
     version: 1.44.0
 
+  additional-platforms:
+    - linux-aarch64
