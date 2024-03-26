@@ -10,7 +10,7 @@ source:
   sha256: 4d6fc4d8f4410c84e09cde21de645d40fd003bdff493b6bf9bb2bfaaa2b380a2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   run_exports:
@@ -47,3 +47,5 @@ about:
 
 extra:
   recipe-maintainers: PauAndrio
+  additional-platforms:
+    - linux-aarch64
