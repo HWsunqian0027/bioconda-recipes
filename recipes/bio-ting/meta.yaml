@@ -9,7 +9,9 @@ source:
   sha256: 13e04e73eade495985debdbe00744205bf9233a8063229b561efa76b851768ca
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bio-ting", max_pin="x.x.x") }}  
   entry_points:
     - ting=ting.ting:main
     - imseq2ting=scripts.imseq2ting:main
@@ -41,3 +43,5 @@ extra:
   notes: 'The tool is available as command `ting`.'
   recipe-maintainers:
     - FelixMoelder
+  additional-platforms:
+    - linux-aarch64
