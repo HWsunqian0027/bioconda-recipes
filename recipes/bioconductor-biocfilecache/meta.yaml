@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 80f9b9c7ef6f3fcb9aaff7125b409137
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -53,3 +53,5 @@ extra:
     path: recipes/bioconductor-biocfilecache
     version: 1.4.0
 
+  additional-platforms:
+    - linux-aarch64
