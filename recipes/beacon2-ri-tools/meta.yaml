@@ -11,7 +11,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("beacon2-ri-tools", max_pin="x.x.x") }}  
   noarch: generic
 
 requirements:
@@ -75,3 +77,5 @@ about:
 extra:
   recipe-maintainers:
     - khaled196
+  additional-platforms:
+    - linux-aarch64
