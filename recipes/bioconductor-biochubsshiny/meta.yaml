@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: bc7ef9bc6285eb045f191b7c72846d68
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -54,3 +54,7 @@ about:
   summary: 'View AnnotationHub and ExperimentHub Resources Interactively'
   description: 'A package that allows interactive exploration of AnnotationHub and ExperimentHub resources. It uses DT / DataTable to display resources for multiple organisms. It provides template code for reproducibility and for downloading resources via the indicated Hub package.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
