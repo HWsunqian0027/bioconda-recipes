@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 9e6cd90c2e4e31067dfab860b5130cf8
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -54,3 +54,7 @@ about:
   summary: 'Provide functions to retrieve and report on usage expenses in NHGRI AnVIL (anvilproject.org).'
   description: 'AnVILBilling helps monitor AnVIL-related costs in R, using queries to a BigQuery table to which costs are exported daily. Functions are defined to help categorize tasks and associated expenditures, and to visualize and explore expense profiles over time. This package will be expanded to help users estimate costs for specific task sets.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
