@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: bedac9523e18829c5067dec1ebf801d4
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,3 +40,7 @@ about:
   summary: 'AlphaMissense v2023 Pathogenicity Scores AnnotationHub Resource Metadata for hg38'
   description: 'Store Google DeepMind AlphaMissense v2023 hg38 pathogenicity scores AnnotationHub Resource Metadata. Provide provenance and citation information for Google DeepMind AlphaMissense v2023 hg38 pathogenicity score AnnotationHub resources. Illustrate in a vignette how to access those resources.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
