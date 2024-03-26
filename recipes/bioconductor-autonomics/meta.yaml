@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 9034c755764d54d8bf0eb0e330f4e54f
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -93,3 +93,5 @@ about:
   description: 'This package offers a generic and intuitive solution for cross-platform omics data analysis. It has functions for import, preprocessing, exploration, contrast analysis and visualization of omics data. It follows a tidy, functional programming paradigm.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
+  additional-platforms:
+    - linux-aarch64
