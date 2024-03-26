@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 512eececc247990236fd09aa1fc46966
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,3 +43,5 @@ extra:
     path: recipes/bioconductor-annotationfilter
     version: 1.4.0
 
+  additional-platforms:
+    - linux-aarch64
