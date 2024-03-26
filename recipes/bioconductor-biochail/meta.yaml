@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 4707c299d0bb3b41001065a753d89f33
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,3 +44,7 @@ about:
   summary: 'basilisk and hail'
   description: 'Use hail via basilisk when appropriate, or via reticulate. This package can be used in terra.bio to interact with UK Biobank resources processed by hail.is.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
