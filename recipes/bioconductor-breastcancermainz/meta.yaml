@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 2b8df5af87b71c6706f909129212b504
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,3 +36,7 @@ about:
   summary: 'Gene expression dataset published by Schmidt et al. [2008] (MAINZ).'
   description: 'Gene expression data from the breast cancer study published by Schmidt et al. in 2008, provided as an eSet.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
