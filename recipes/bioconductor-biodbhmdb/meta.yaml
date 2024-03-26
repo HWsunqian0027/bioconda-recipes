@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: b34c06c2ce8865b7eebedb869a1ab505
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,3 +50,7 @@ about:
   description: 'The biodbHmdb library is an extension of the biodb framework package that provides access to the HMDB Metabolites database. It allows to download the whole HMDB Metabolites database locally, access entries and search for entries by name or description. A future version of this package will also include a search by mass and mass spectra annotation.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
