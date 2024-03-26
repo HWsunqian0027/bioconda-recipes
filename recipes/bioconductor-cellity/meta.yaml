@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: c6680442e176cef832fc19d82d49815a
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -51,3 +51,7 @@ about:
   description: 'A support vector machine approach to identifying and filtering low quality cells from single-cell RNA-seq datasets.'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
