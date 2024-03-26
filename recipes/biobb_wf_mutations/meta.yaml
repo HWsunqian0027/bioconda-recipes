@@ -13,7 +13,9 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("biobb_wf_mutations", max_pin="x.x.x") }}  
   noarch: python
 
 requirements:
@@ -57,3 +59,5 @@ about:
 
 extra:
   recipe-maintainers: ''
+  additional-platforms:
+    - linux-aarch64
