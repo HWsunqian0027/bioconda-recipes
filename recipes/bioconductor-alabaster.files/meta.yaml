@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: ea12d81dadbad7340c5f2d6be276a697
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,3 +47,7 @@ about:
   description: 'Save common bioinformatics file formats within the alabaster framework. This includes BAM, BED, VCF, bigWig, bigBed, FASTQ, FASTA and so on. We save and load additional metadata for each file, and we support linkage between each file and its corresponding index.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
