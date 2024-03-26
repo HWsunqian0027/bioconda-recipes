@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 4d50affb50e6f6a11d8c4e379b6116d8
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -57,3 +57,5 @@ extra:
     path: recipes/bioconductor-adsplit
     version: 1.50.0
 
+  additional-platforms:
+    - linux-aarch64
