@@ -13,7 +13,9 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 3c35064b396540d5de3ca7fa595657d7
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bioconductor-alpine", max_pin="x.x.x") }}  
   rpaths:
     - lib/R/lib/
     - lib/
@@ -67,3 +69,5 @@ extra:
     path: recipes/bioconductor-alpine
     version: 1.6.0
 
+  additional-platforms:
+    - linux-aarch64
