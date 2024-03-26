@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 895230cd9b780dbb286a012f3c8777eb
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,3 +36,7 @@ about:
   description: 'Whole-genome single cell sequencing data for demonstration purposes in the AneuFinder package.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
