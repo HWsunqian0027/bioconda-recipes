@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: b141511c6e978d4f26c8ec4c42c078c2
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,3 +46,5 @@ extra:
     path: recipes/bioconductor-basespacer
     version: 1.24.0
 
+  additional-platforms:
+    - linux-aarch64
