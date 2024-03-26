@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 63aa3efc1c85d5a26e4d69d50f781a2a
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,3 +40,7 @@ about:
   summary: 'EnsDbs for AnnotationHub'
   description: 'Supplies AnnotationHub with EnsDb Ensembl-based annotation databases for all species. EnsDb SQLite databases are generated separately from Ensembl MySQL databases using functions from the ensembldb package employing the Ensembl Perl API.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
