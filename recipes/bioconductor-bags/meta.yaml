@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 42c7a57422ddbb5c2d5263703a7e22d0
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,3 +41,7 @@ about:
   summary: 'A Bayesian Approach for Geneset Selection'
   description: 'R package providing functions to perform geneset significance analysis over simple cross-sectional data between 2 and 5 phenotypes of interest.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
