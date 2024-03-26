@@ -7,7 +7,9 @@ source:
   sha256: f3ee403390c3de0a2f21f025a45b35c6131f4f39510c834fbe57ade28162c87b
 
 build:
-  number: 6
+  number: 7
+  run_exports:
+    - {{ pin_subpackage("ac-diamond", max_pin="x.x.x") }}  
   skip: True # [osx]
 
 requirements:
@@ -29,3 +31,7 @@ about:
   home: https://github.com/Maihj/AC-DIAMOND
   license: GNU Affero General Public License v3.0
   summary: AC-DIAMOND is a DNA-protein alignment tool
+
+extra:
+  additional-platforms:
+    - linux-aarch64
