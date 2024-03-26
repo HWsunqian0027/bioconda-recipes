@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 94ac7a2ff2a9de7b65d8ebd864513a31
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -48,3 +48,7 @@ about:
   summary: 'Cross-target analysis of small molecule bioactivity'
   description: 'bioassayR is a computational tool that enables simultaneous analysis of thousands of bioassay experiments performed over a diverse set of compounds and biological targets. Unique features include support for large-scale cross-target analyses of both public and custom bioassays, generation of high throughput screening fingerprints (HTSFPs), and an optional preloaded database that provides access to a substantial portion of publicly available bioactivity data.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
