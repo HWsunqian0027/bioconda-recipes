@@ -10,7 +10,9 @@ source:
     - makefile-compiler.patch
 
 build:
-  number: 4
+  number: 5
+  run_exports:
+    - {{ pin_subpackage("admixtools", max_pin="x.x.x") }}  
 
 requirements:
   build:
@@ -36,3 +38,5 @@ extra:
   identifiers:
     - biotools:AdmixTools
     - doi:10.1534/genetics.112.145037
+  additional-platforms:
+    - linux-aarch64
