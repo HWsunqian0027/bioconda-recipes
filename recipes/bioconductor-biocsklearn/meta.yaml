@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: a3df49031172bfd2b2a3b1c242b7dd40
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,3 +43,7 @@ about:
   summary: 'interface to python sklearn via Rstudio reticulate'
   description: 'This package provides interfaces to selected sklearn elements, and demonstrates fault tolerant use of python modules requiring extensive iteration.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
