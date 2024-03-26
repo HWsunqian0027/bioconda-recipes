@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: a876bb01eda62604a32a96b46e34162b
 build:
-  number: 4
+  number: 5
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,3 +40,7 @@ about:
   summary: 'Affymetrix Affymetrix Canine Array annotation data (chip canine)'
   description: 'Affymetrix Affymetrix Canine Array annotation data (chip canine) assembled using data from public repositories'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
