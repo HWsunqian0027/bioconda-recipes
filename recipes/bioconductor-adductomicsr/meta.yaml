@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 82e24a09ba891b76e9497a6725b96fe0
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -76,3 +76,7 @@ about:
   summary: 'Processing of adductomic mass spectral datasets'
   description: 'Processes MS2 data to identify potentially adducted peptides from spectra that has been corrected for mass drift and retention time drift and quantifies MS1 level mass spectral peaks.'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
