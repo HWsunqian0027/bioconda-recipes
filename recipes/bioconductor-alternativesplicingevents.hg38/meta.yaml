@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 8d49710eebd62fb15a48cab252ff3eca
 build:
-  number: 4
+  number: 5
   rpaths:
     - lib/R/lib/
     - lib/
@@ -39,3 +39,7 @@ about:
   description: 'Data frame containing alternative splicing events. The splicing events were compiled from the annotation files used by the alternative splicing quantification tools MISO, VAST-TOOLS, SUPPA and rMATS.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
