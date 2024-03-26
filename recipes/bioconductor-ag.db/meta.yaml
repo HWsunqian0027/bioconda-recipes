@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
   md5: 925e808d2c9b21a11ed131d483e75ab6
 build:
-  number: 4
+  number: 5
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,3 +40,7 @@ about:
   summary: 'Affymetrix Affymetrix AG Array annotation data (chip ag)'
   description: 'Affymetrix Affymetrix AG Array annotation data (chip ag) assembled using data from public repositories'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
