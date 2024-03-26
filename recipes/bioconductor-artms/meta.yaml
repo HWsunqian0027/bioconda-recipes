@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: d52a9405bcf6f4a3920ecb70be49c1d9
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -89,3 +89,5 @@ about:
   description: 'artMS provides a set of tools for the analysis of proteomics label-free datasets. It takes as input the MaxQuant search result output (evidence.txt file) and performs quality control, relative quantification using MSstats, downstream analysis and integration. artMS also provides a set of functions to re-format and make it compatible with other analytical tools, including, SAINTq, SAINTexpress, Phosfate, and PHOTON. Check [http://artms.org](http://artms.org) for details.'
   license_file: LICENSE
 
+  additional-platforms:
+    - linux-aarch64
