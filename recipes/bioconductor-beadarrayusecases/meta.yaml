@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: a939c03744773755b9a80de63a925c3e
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,3 +43,7 @@ about:
   description: 'Example data files and use cases for processing Illumina BeadArray expression data using Bioconductor'
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
