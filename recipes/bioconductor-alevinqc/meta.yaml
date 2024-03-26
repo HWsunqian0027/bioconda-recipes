@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: fa79ac8ac72e4d6d16c096886e9f759d
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -65,3 +65,7 @@ about:
   description: 'Generate QC reports summarizing the output from an alevin, alevin-fry, or simpleaf run. Reports can be generated as html or pdf files, or as shiny applications.'
   license_file: LICENSE
 
+
+extra:
+  additional-platforms:
+    - linux-aarch64
