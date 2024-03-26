@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: c653e9cbee3faeb6fd5759b7575f234d
 build:
-  number: 17
+  number: 18
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,3 +42,5 @@ extra:
     path: recipes/bioconductor-bsgenome.ecoli.ncbi.20080805
     version: 1.3.1000
 
+  additional-platforms:
+    - linux-aarch64
