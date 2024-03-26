@@ -23,7 +23,7 @@ extra:
     - should_be_noarch_generic
 
 build:
-  number: 0
+  number: 1
   skip: True  # [osx]
   run_exports:
     - {{ pin_subpackage(name, max_pin="x") }}
@@ -31,3 +31,5 @@ build:
 test:
   commands:
     - actc -h
+  additional-platforms:
+    - linux-aarch64
