@@ -10,7 +10,9 @@ source:
   sha256: 75b377e666ec850b63762dbbc54724b20d3df99b5d778f6753e24cb5e74eb6d3
 
 build:
-  number: 0
+  number: 1
+  run_exports:
+    - {{ pin_subpackage("bialign", max_pin="x.x.x") }}  
   script: "{{ PYTHON }} -m pip install . -vv"
 
 
@@ -45,3 +47,5 @@ extra:
   identifiers:
     - doi:10.1007/978-3-030-63061-4_15
 
+  additional-platforms:
+    - linux-aarch64
