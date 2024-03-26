@@ -13,7 +13,7 @@ source:
     - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
   md5: 98a8ca836d6db23e46674552669d7942
 build:
-  number: 17
+  number: 18
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,3 +43,5 @@ extra:
     path: recipes/bioconductor-bsgenome.celegans.ucsc.ce10
     version: 1.4.0
 
+  additional-platforms:
+    - linux-aarch64
