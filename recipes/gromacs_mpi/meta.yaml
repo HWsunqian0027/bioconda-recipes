@@ -1,0 +1,12 @@
+
+  run_exports:
+    - {{ pin_subpackage("gromacs_mpi", max_pin="x.x.x") }}  
+extra:
+  run_exports:
+    - {{ pin_subpackage("gromacs_mpi", max_pin="x.x.x") }}  
+  additional-platforms:
+  run_exports:
+    - {{ pin_subpackage("gromacs_mpi", max_pin="x.x.x") }}  
+    - linux-aarch64
+  run_exports:
+    - {{ pin_subpackage("gromacs_mpi", max_pin="x.x.x") }}  
