@@ -15,7 +15,7 @@ fi
     --with-mpi="$PREFIX" \
     --with-sparsehash="$PREFIX" \
     --without-sqlite || cat config.log
-make AM_CXXFLAGS="-Wall -Wnarrowing"
+make AM_CXXFLAGS="-Wall -Wnarrowing -fsigned-char"
 make install
 
 $RECIPE_DIR/create-wrapper.sh "$PREFIX/bin/abyss-pe" "$PREFIX/bin/abyss-pe.Makefile"
